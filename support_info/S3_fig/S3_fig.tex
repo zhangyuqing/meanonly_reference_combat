@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage[FIGTOPCAP]{subfigure}
+\usepackage{fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{figure}[h]
+	\begin{center}
+    	\renewcommand\thesubfigure{}
+    	\subfigure[No Adjustment]{\includegraphics[width=0.3\textwidth]{NO_geneVariance_box_Original.png}} 
+    	\subfigure[Mean-only ComBat]{\includegraphics[width=0.3\textwidth]{NO_geneVariance_box_Meanonly.png}} 
+   	 	\subfigure[Mean/variance ComBat]{\includegraphics[width=0.3\textwidth]{NO_geneVariance_box_ComBat.png}}
+  	\end{center}
+\end{figure}
+
+\end{document}

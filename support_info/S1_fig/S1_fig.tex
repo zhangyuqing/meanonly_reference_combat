@@ -1,0 +1,28 @@
+\documentclass[8pt]{article}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage[FIGTOPCAP]{subfigure}
+\usepackage{fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{figure}[ht]
+	\begin{center}
+		\renewcommand\thesubfigure{(A)}
+    	\subfigure[No Adjustment]{\includegraphics[width=0.6\textwidth]{bladder_Raw_Original.png}} \\
+		\renewcommand\thesubfigure{(B)}    	
+    	\subfigure[Mean-only ComBat]{\includegraphics[width=0.6\textwidth]{bladder_Raw_Meanonly.png}} \\
+    	\renewcommand\thesubfigure{(C)}
+   	 	\subfigure[Mean/variance ComBat]{\includegraphics[width=0.6\textwidth]{bladder_Raw_ComBat.png}}
+  	\end{center}
+\end{figure}
+
+\end{document}

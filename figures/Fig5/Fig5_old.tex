@@ -1,0 +1,26 @@
+\documentclass[8pt]{article}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage[FIGTOPCAP]{subfigure}
+\usepackage{fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{figure}[ht]
+	\begin{center}
+		\renewcommand\thesubfigure{\textbf{A.}}
+    	\subfigure[]{\includegraphics[width=0.4\textwidth]{signatureChange_part1_vertical_300ppi.png}} \\
+		\renewcommand\thesubfigure{\textbf{B.}}    	
+    	\subfigure[]{\includegraphics[width=0.6\textwidth]{signatureChange_part2_vertical_300ppi.png}} \\
+  	\end{center}
+\end{figure}
+
+\end{document}
